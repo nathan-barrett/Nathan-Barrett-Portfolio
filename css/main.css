@@ -503,7 +503,7 @@ section#header {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    font-size: .8em;
+    font-size: 1.5em;
     text-align: center;
     font-weight: 600; }
     section#header .header-text span {
@@ -581,5 +581,34 @@ div.wrapper-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 4fr 4fr 4fr 4fr 1fr; }
+
+section#about {
+  background: #88a2aa;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 12;
+  padding: 40px 0; }
+  section#about .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    section#about .container .item {
+      flex-basis: 45%;
+      margin: 1vmin;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      section#about .container .item .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: #1b4079;
+        justify-content: center;
+        align-items: center;
+        display: flex; }
+      section#about .container .item p {
+        width: 80%;
+        font-size: .8em; }
 
 /*# sourceMappingURL=main.css.map */

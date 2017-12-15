@@ -1,0 +1,34 @@
+section#about {
+  background: $grey-blue;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 12;
+  padding: $section-padding;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .item {
+      flex-basis: 45%;
+      margin: 1vmin;
+      // border: 1px solid black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: $blue;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      p {
+        width: 80%;
+        font-size: .8em;
+      }
+    }
+  }
+}
