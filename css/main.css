@@ -580,7 +580,7 @@ div.wrapper-grid {
   max-width: 1180px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 4fr 4fr 4fr 4fr 1fr; }
+  grid-template-rows: 550px 520px 1fr 100px 50px; }
 
 section#about {
   background: #88a2aa;
@@ -610,5 +610,32 @@ section#about {
       section#about .container .item p {
         width: 80%;
         font-size: .8em; }
+
+section#portfolio {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 12;
+  padding: 40px 0;
+  background: #fff8f0; }
+  section#portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    section#portfolio .container .project:nth-child(1) {
+      background: url(../img/portfolio1.png) no-repeat center center/cover; }
+    section#portfolio .container .project:nth-child(2) {
+      background: url(../img/portfolio2.png) no-repeat center center/cover; }
+    section#portfolio .container .project:nth-child(3) {
+      background: url(../img/portfolio3.png) no-repeat center center/cover; }
+    section#portfolio .container .project:nth-child(4) {
+      background: url(../img/portfolio4.png) no-repeat center center/cover; }
+    section#portfolio .container .project:nth-child(5) {
+      background: url(../img/portfolio5.png) no-repeat center center/cover; }
+    section#portfolio .container .project:nth-child(6) {
+      background: url(../img/portfolio6.png) no-repeat center center/cover; }
+    section#portfolio .container .project {
+      height: 240px;
+      width: 100vw;
+      margin: 10px auto; }
 
 /*# sourceMappingURL=main.css.map */

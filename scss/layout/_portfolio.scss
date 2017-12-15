@@ -1,0 +1,35 @@
+section#portfolio {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 12;
+  padding: $section-padding;
+  background: $text-color;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    .project:nth-child(1) {
+    background: url(../img/portfolio1.png) no-repeat center center/cover;
+    }
+    .project:nth-child(2) {
+    background: url(../img/portfolio2.png) no-repeat center center/cover;
+    }
+    .project:nth-child(3) {
+    background: url(../img/portfolio3.png) no-repeat center center/cover;
+    }
+    .project:nth-child(4)  {
+    background: url(../img/portfolio4.png) no-repeat center center/cover;
+    }
+    .project:nth-child(5) {
+    background: url(../img/portfolio5.png) no-repeat center center/cover;
+    }
+    .project:nth-child(6){
+    background: url(../img/portfolio6.png) no-repeat center center/cover;
+    }
+    .project {
+      height: 240px;
+      width: 100vw;
+      margin: 10px auto;
+    }
+  }
+}
