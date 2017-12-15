@@ -1,10 +1,4 @@
-// -----------------------------------------------------------------------------
-// This file contains CSS helper classes.
-// -----------------------------------------------------------------------------
 
-/**
- * Clear inner floats
- */
 .clearfix::after {
   clear: both;
   content: '';
@@ -26,11 +20,11 @@
   width: 100%; /* 1 */
  }
 
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto !important;
+}
 .hide-text {
   overflow: hidden;
   padding: 0; /* 1 */
