@@ -1,3 +1,21 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+section#footer {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $black;
+  color: $text-color;
+  ul {
+    list-style: none;
+    color: $text-color;
+    a {
+      color: $text-color;
+    }
+    li {
+    display: inline;
+    color: $text-color;
+    padding: 0 10px;
+    }
+  }
+}

@@ -3,7 +3,7 @@ section#header {
   grid-column: 1 / span 12;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 1fr 80px;
   background: url(../img/header-back.jpg) no-repeat center;
   background-size: cover;
   .header-text {
@@ -24,7 +24,7 @@ section#header {
 .nav {
   display: flex;
   justify-content: flex-end;
-  margin: 4vmin 4vmin 0 0;
+  margin: 0 4vmin 0 0;
 
 
 }
@@ -35,6 +35,7 @@ section#header {
   height: 20px;
   transition: 1s;
   cursor: pointer;
+  align-self: center;
 }
 .icon {
   height: 3.5px;

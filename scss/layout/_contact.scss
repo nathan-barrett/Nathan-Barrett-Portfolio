@@ -1,0 +1,45 @@
+section#contact {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 12;
+  background: $grey-blue;
+  padding: $section-padding;
+  .contact-header {
+    text-align: center;
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .header-bar {
+      height: 4px;
+      width: 110px;
+      background: $text-color;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+  }
+  form.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    outline: none;
+    padding: 10px 15px;
+    input, textarea {
+      color: $text-color;
+      border-bottom: 2px solid $text-color;
+      outline: none;
+      &:focus {
+        border-bottom: 2px solid $red;
+        outline: none;
+      }
+    }
+    input.button {
+      width: 80%;
+      margin: 20px auto 0 auto;
+      background: $blue;
+      border: none;
+      // border: 1px solid $red;
+      box-shadow: 2px 2px 2px $blue;
+
+    }
+
+  }
+}

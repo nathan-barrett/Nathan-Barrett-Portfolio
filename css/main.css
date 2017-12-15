@@ -493,7 +493,7 @@ section#header {
   grid-column: 1 / span 12;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 1fr 80px;
   background: url(../img/header-back.jpg) no-repeat center;
   background-size: cover; }
   section#header .header-text {
@@ -512,14 +512,15 @@ section#header {
 .nav {
   display: flex;
   justify-content: flex-end;
-  margin: 4vmin 4vmin 0 0; }
+  margin: 0 4vmin 0 0; }
 
 .menu {
   position: relative;
   width: 20px;
   height: 20px;
   transition: 1s;
-  cursor: pointer; }
+  cursor: pointer;
+  align-self: center; }
 
 .icon {
   height: 3.5px;
@@ -576,11 +577,29 @@ section#header {
   top: 0px;
   transform: rotateZ(45deg); }
 
+section#footer {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2e2e3a;
+  color: #fff8f0; }
+  section#footer ul {
+    list-style: none;
+    color: #fff8f0; }
+    section#footer ul a {
+      color: #fff8f0; }
+    section#footer ul li {
+      display: inline;
+      color: #fff8f0;
+      padding: 0 10px; }
+
 div.wrapper-grid {
   max-width: 1180px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 550px 520px 1fr 100px 50px; }
+  grid-template-rows: 550px 520px 1650px 1.3fr 50px; }
 
 section#about {
   background: #88a2aa;
@@ -610,6 +629,41 @@ section#about {
       section#about .container .item p {
         width: 80%;
         font-size: .8em; }
+
+section#contact {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 12;
+  background: #88a2aa;
+  padding: 40px 0; }
+  section#contact .contact-header {
+    text-align: center; }
+    section#contact .contact-header h2 {
+      text-transform: uppercase;
+      margin-bottom: 2px; }
+    section#contact .contact-header .header-bar {
+      height: 4px;
+      width: 110px;
+      background: #fff8f0;
+      margin: 0 auto;
+      border-radius: 5px; }
+  section#contact form.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    outline: none;
+    padding: 10px 15px; }
+    section#contact form.contact-form input, section#contact form.contact-form textarea {
+      color: #fff8f0;
+      border-bottom: 2px solid #fff8f0;
+      outline: none; }
+      section#contact form.contact-form input:focus, section#contact form.contact-form textarea:focus {
+        border-bottom: 2px solid #db162f;
+        outline: none; }
+    section#contact form.contact-form input.button {
+      width: 80%;
+      margin: 20px auto 0 auto;
+      background: #1b4079;
+      border: none;
+      box-shadow: 2px 2px 2px #1b4079; }
 
 section#portfolio {
   grid-row: 3 / span 1;
