@@ -8,6 +8,20 @@ section#portfolio {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    h2 {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      color: $grey-blue;
+    }
+    .header-bar {
+      height: 4px;
+      width: 110px;
+      background: $grey-blue;
+      margin: 0 auto 20px auto;
+      border-radius: 5px;
+    }
     .project:nth-child(1) {
     background: url(../img/portfolio1.png) no-repeat center center/cover;
     }

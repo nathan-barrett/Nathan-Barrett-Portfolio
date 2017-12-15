@@ -7,6 +7,24 @@ section#about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    .about-header {
+      display: block;
+      width: 100%;
+      h2 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        color: $text-color;
+      }
+      .header-bar {
+        height: 4px;
+        width: 110px;
+        background: $text-color;
+        margin: 0 auto 20px auto;
+        border-radius: 5px;
+      }
+    }
     .item {
       flex-basis: 45%;
       margin: 1vmin;

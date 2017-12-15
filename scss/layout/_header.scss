@@ -31,16 +31,16 @@ section#header {
 .menu {
 
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   transition: 1s;
   cursor: pointer;
   align-self: center;
 }
 .icon {
-  height: 3.5px;
-  width: 20px;
-  top: 7px;
+  height: 7px;
+  width: 40px;
+  top: 14px;
   background-color: $text-color;
   border-radius: 20px;
   position: absolute;
@@ -49,9 +49,9 @@ section#header {
 .icon:before{
   left: 0;
   position: absolute;
-  top: -6.25px;
-  height: 3.5px;
-  width: 20px;
+  top: -12.5px;
+  height: 7px;
+  width: 40px;
   background-color: $text-color;
   content: "";
   border-radius: 20px;
@@ -61,9 +61,9 @@ section#header {
 .icon:after{
   left: 0;
   position: absolute;
-  top: 6.25px;
-  height: 3.5px;
-  width: 20px;
+  top: 12px;
+  height: 7px;
+  width: 40px;
   background-color: $text-color;
   content: "";
   border-radius: 20px;

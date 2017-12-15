@@ -516,16 +516,16 @@ section#header {
 
 .menu {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   transition: 1s;
   cursor: pointer;
   align-self: center; }
 
 .icon {
-  height: 3.5px;
-  width: 20px;
-  top: 7px;
+  height: 7px;
+  width: 40px;
+  top: 14px;
   background-color: #fff8f0;
   border-radius: 20px;
   position: absolute;
@@ -534,9 +534,9 @@ section#header {
 .icon:before {
   left: 0;
   position: absolute;
-  top: -6.25px;
-  height: 3.5px;
-  width: 20px;
+  top: -12.5px;
+  height: 7px;
+  width: 40px;
   background-color: #fff8f0;
   content: "";
   border-radius: 20px;
@@ -545,9 +545,9 @@ section#header {
 .icon:after {
   left: 0;
   position: absolute;
-  top: 6.25px;
-  height: 3.5px;
-  width: 20px;
+  top: 12px;
+  height: 7px;
+  width: 40px;
   background-color: #fff8f0;
   content: "";
   border-radius: 20px;
@@ -599,7 +599,7 @@ div.wrapper-grid {
   max-width: 1180px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 550px 520px 1650px 1.3fr 50px; }
+  grid-template-rows: 550px 570px 1550px 1.3fr 50px; }
 
 section#about {
   background: #88a2aa;
@@ -610,6 +610,21 @@ section#about {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; }
+    section#about .container .about-header {
+      display: block;
+      width: 100%; }
+      section#about .container .about-header h2 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        color: #fff8f0; }
+      section#about .container .about-header .header-bar {
+        height: 4px;
+        width: 110px;
+        background: #fff8f0;
+        margin: 0 auto 20px auto;
+        border-radius: 5px; }
     section#about .container .item {
       flex-basis: 45%;
       margin: 1vmin;
@@ -675,6 +690,18 @@ section#portfolio {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; }
+    section#portfolio .container h2 {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      color: #88a2aa; }
+    section#portfolio .container .header-bar {
+      height: 4px;
+      width: 110px;
+      background: #88a2aa;
+      margin: 0 auto 20px auto;
+      border-radius: 5px; }
     section#portfolio .container .project:nth-child(1) {
       background: url(../img/portfolio1.png) no-repeat center center/cover; }
     section#portfolio .container .project:nth-child(2) {
