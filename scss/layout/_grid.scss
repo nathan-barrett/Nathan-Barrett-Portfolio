@@ -11,3 +11,8 @@ div.wrapper-grid {
     grid-template-rows: 550px 600px 950px 1.3fr 50px;
   }
 }
+@media screen and (min-width: 300px) {
+  div.wrapper-grid {
+    grid-template-rows: 550px 700px 950px 1.3fr 50px;
+  }
+}
