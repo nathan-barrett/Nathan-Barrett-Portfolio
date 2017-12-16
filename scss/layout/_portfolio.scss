@@ -2,25 +2,29 @@ section#portfolio {
   grid-row: 3 / span 1;
   grid-column: 1 / span 12;
   padding: $section-padding;
-  background: $text-color;
+  background: $black;
   .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    h2 {
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 2px;
-      color: $grey-blue;
-    }
-    .header-bar {
-      height: 4px;
-      width: 110px;
-      background: $grey-blue;
-      margin: 0 auto 20px auto;
-      border-radius: 5px;
+    .portfolio-header {
+      width: 95%;
+      margin: 0 auto;
+      h2 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        color: $text-color;
+      }
+      .header-bar {
+        height: 4px;
+        width: 110px;
+        background: $text-color;
+        margin: 0 auto 20px auto;
+        border-radius: 5px;
+      }
     }
     .project:nth-child(1) {
     background: url(../img/portfolio1.png) no-repeat center center/cover;
@@ -44,6 +48,38 @@ section#portfolio {
       height: 240px;
       width: 100vw;
       margin: 10px auto;
+      .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:rgba(0,0,0,.75);
+        height: 100%;
+        flex-direction: column;
+        opacity:0;
+        transition: opacity .25s ease-out;
+        button {
+          background: $blue;
+          display: block;
+          color: $text-color;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+      &:hover {
+        .overlay {
+          opacity:1;
+        }
+      }
     }
   }
+}
+@media screen and (min-width: 768px) {
+    section#portfolio .container .project {
+      width: 45vw;
+    }
+}
+@media screen and (min-width: 1200px) {
+    section#portfolio .container .project {
+      width: 35vw;
+    }
 }

@@ -577,6 +577,9 @@ section#header {
   top: 0px;
   transform: rotateZ(45deg); }
 
+@media screen and (min-width: 768px) {
+  .header-text p {
+    font-size: 2em; } }
 section#footer {
   grid-row: 5 / span 1;
   grid-column: 1 / span 12;
@@ -597,10 +600,14 @@ section#footer {
 
 div.wrapper-grid {
   max-width: 1180px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 550px 570px 1550px 1.3fr 50px; }
+  grid-template-rows: 550px 600px 1550px 1.3fr 50px; }
 
+@media screen and (min-width: 768px) {
+  div.wrapper-grid {
+    grid-template-rows: 550px 600px 950px 1.3fr 50px; } }
 section#about {
   background: #88a2aa;
   grid-row: 2 / span 1;
@@ -626,7 +633,7 @@ section#about {
         margin: 0 auto 20px auto;
         border-radius: 5px; }
     section#about .container .item {
-      flex-basis: 45%;
+      flex-basis: 39%;
       margin: 1vmin;
       display: flex;
       flex-wrap: wrap;
@@ -684,24 +691,27 @@ section#portfolio {
   grid-row: 3 / span 1;
   grid-column: 1 / span 12;
   padding: 40px 0;
-  background: #fff8f0; }
+  background: #2e2e3a; }
   section#portfolio .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; }
-    section#portfolio .container h2 {
-      display: block;
-      text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 2px;
-      color: #88a2aa; }
-    section#portfolio .container .header-bar {
-      height: 4px;
-      width: 110px;
-      background: #88a2aa;
-      margin: 0 auto 20px auto;
-      border-radius: 5px; }
+    section#portfolio .container .portfolio-header {
+      width: 95%;
+      margin: 0 auto; }
+      section#portfolio .container .portfolio-header h2 {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        color: #fff8f0; }
+      section#portfolio .container .portfolio-header .header-bar {
+        height: 4px;
+        width: 110px;
+        background: #fff8f0;
+        margin: 0 auto 20px auto;
+        border-radius: 5px; }
     section#portfolio .container .project:nth-child(1) {
       background: url(../img/portfolio1.png) no-repeat center center/cover; }
     section#portfolio .container .project:nth-child(2) {
@@ -718,5 +728,29 @@ section#portfolio {
       height: 240px;
       width: 100vw;
       margin: 10px auto; }
+      section#portfolio .container .project .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.75);
+        height: 100%;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .25s ease-out; }
+        section#portfolio .container .project .overlay button {
+          background: #1b4079;
+          display: block;
+          color: #fff8f0;
+          width: 60%;
+          margin: 0 auto; }
+      section#portfolio .container .project:hover .overlay {
+        opacity: 1; }
+
+@media screen and (min-width: 768px) {
+  section#portfolio .container .project {
+    width: 45vw; } }
+@media screen and (min-width: 1200px) {
+  section#portfolio .container .project {
+    width: 35vw; } }
 
 /*# sourceMappingURL=main.css.map */
